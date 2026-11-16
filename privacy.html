@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy policy — Telegram Ecosystem Backups</title>
+<style>body{font:18px/1.65 system-ui,sans-serif;max-width:760px;margin:64px auto;padding:0 24px;color:#20252b;background:#fafafa}a{color:#1857a5}h1{line-height:1.2}</style>
+<main>
+<a href="index.html">Telegram Ecosystem Backups</a>
+<h1>Privacy policy</h1>
+<p>Last updated: 17 November 2026. This page describes the intended Google Drive integration of this personal utility, which is currently being configured.</p>
+<h2>Information processed</h2>
+<p>The utility processes the owner's application database snapshot, application settings and media to create recovery archives. Archives can contain personal information and application credentials. They are encrypted on the application server before upload.</p>
+<p>The Google integration will use OAuth authorization tokens and metadata of managed Drive files, including file names, identifiers, sizes and checksums. Tokens will be stored in a protected configuration on the owner's server and used to upload, check and rotate backup archives.</p>
+<h2>Scope and purpose</h2>
+<p>The utility will request the <code>drive.file</code> scope to manage files it creates in Google Drive. Google user data will be used only to store, verify and recover the owner's backups. The utility does not include advertising, tracking analytics or sale of Google user data.</p>
+<h2>Storage and sharing</h2>
+<p>The owner's server processes the source information. Google Drive will store the encrypted archives and associated file metadata under the owner's account. The archive encryption key will not be uploaded alongside those archives. Operational configuration and secrets are excluded from the public information pages.</p>
+<p>The configured retention will be up to three daily archives and one archive before an application update. Rotation will delete only archives managed by this utility, after replacement copies have been checked. The owner may retain separate recovery copies under their own control.</p>
+<h2>Control and contact</h2>
+<p>The owner can stop the server job, delete archives through Google Drive, or revoke the application's access through their Google Account connections settings. Revoking access stops future API operations; it does not automatically delete existing archives.</p>
+<p>Questions can be directed to the <a href="https://github.com/balzam224">project owner</a> or the support address displayed on Google's consent screen.</p>
+<p>These static information pages contain no application analytics or advertising scripts. Their hosting provider may process ordinary web request information under its own policies.</p>
+<p><a href="terms.html">Terms of use</a></p>
+</main>
+</html>
