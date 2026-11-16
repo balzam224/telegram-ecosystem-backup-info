@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Telegram Ecosystem Backups</title>
+<style>body{font:18px/1.65 system-ui,sans-serif;max-width:760px;margin:64px auto;padding:0 24px;color:#20252b;background:#fafafa}a{color:#1857a5}h1{line-height:1.2}nav{margin-top:36px}</style>
+<main>
+<p>Personal backup utility</p>
+<h1>Telegram Ecosystem Backups</h1>
+<p>A private utility being configured to save encrypted backups of the owner's Telegram application to the owner's Google Drive account.</p>
+<h2>How it works</h2>
+<p>The application server creates a database snapshot, checks a test restoration, and packages application settings and media. The package is encrypted before it is uploaded to Google Drive.</p>
+<p>Once configured, the utility will create one backup per day and retain up to three daily backups and one backup made before an application update. Older managed archives will be removed after replacement copies have been checked.</p>
+<h2>Google Drive access</h2>
+<p>The planned authorization scope is <code>drive.file</code>: the utility will manage files it creates. It will not request access to all existing files in the owner's Drive. Authorization is granted by the owner through Google.</p>
+<p>This is a personal administrative tool under configuration, not a public backup service. Automatic Google Drive uploads are not yet enabled.</p>
+<nav><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> · <a href="https://github.com/balzam224">Project owner</a></nav>
+</main>
+</html>
